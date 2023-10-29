@@ -352,3 +352,28 @@ color: #1792b8;
 font-size: 0.9rem;
     }
 }
+@media (max-width: 400px) {
+    .navigation {
+        margin-right: 0;
+        font-size: 0.7rem;
+    }
+    .box4 {
+        width: 80%;
+        height: 55vh;
+    }
+    .box2 div{
+    font-size: 0.85rem;
+    }
+    .box2 li {
+        font-size: .8rem;
+        margin-left: 25px;
+    }
+    .containervivod {
+        font-size: .7rem;
+    }
+    .logo_footer {
+        width: 30px;
+        margin-top: 10%;
+        margin-left: 40px;
+    } 
+}

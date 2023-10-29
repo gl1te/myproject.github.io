@@ -1,0 +1,354 @@
+* { 
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+   user-select: none;
+   -ms-user-select: none;
+}
+
+body {
+    display: block;
+    background-image: url(../icons/backgroundpage2.jpg);
+    background-size: cover;
+    width: 100%;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;            
+    display: flex;
+    justify-content: center;
+    z-index: 999;
+}
+.logo {
+    width: 55%;
+    height: 10vh;
+    margin-top: 0;
+    margin-left: 15px;
+    transition-property: transform;
+    transition: 500ms;
+    
+} 
+
+.wrapper {
+    justify-content: space-between;
+    height: 10vh;
+    width: 80%;
+    display: flex;
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color:rgb(22, 22, 22);
+}
+
+
+.logo:hover{
+    transform: scale(0.95);
+} 
+
+.logo:active{
+    transform: scale(0.8);
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.navigation a {
+    text-decoration: none;
+    font: bold; 
+    color: white;
+    float: right;
+    margin-right: 30px;
+    cursor: pointer;
+    position: relative;
+    color:white; 
+    cursor: pointer;
+    line-height: 1; 
+    transition-property: transform;
+    transition: 250ms;
+}
+
+.navigation a:after {
+	display: block;
+	position: absolute;
+	left: 0; 
+	width: 0;
+	height: 2px; 
+    content: "";
+	background-color: white; 
+	transition: width 0.3s ease-out; 
+}
+
+.navigation a:hover {
+    text-shadow: 0 0 5px #1792b8, 0 0 10px #1792b8, 0 0 20px #1792b8;
+}
+
+.navigation a:hover:after,
+.navigation a:hover::before,
+.navigation a:focus:after {
+	width: 100%; 
+}
+
+#about-us {
+    display: none;
+}
+
+  #about-us:target { 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    z-index: 998;
+  }
+.box4 {
+
+    border-radius: 20px;
+    text-align: center;
+    background-image: url(../icons/backgroundsect2.jpg);
+    background-size: cover;
+    background-position: 100%;
+    width: 35%;
+    height: 53vh;
+}
+
+.box4 h2 {
+    margin-top: 4%;
+
+}
+.box4 p {
+    padding-bottom: 10px;
+    border-bottom: solid 2px rgb(131, 131, 131);  
+}
+
+.box4 h3 {
+    margin-top: 1%;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+}
+
+.abtlogo {
+    width: 17%;
+    height: 17%;
+    margin-top: 3%;
+    transition: 300ms;
+}
+.abtlogo:hover {
+    transform: scale(0.95);
+}
+.abtlogo:active {
+    transform: scale(0.9);
+}
+
+.close {
+    display: flex;
+    margin: 5px 10px;
+    position: absolute;
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+    transition: 250ms;
+}
+
+.close:hover {
+transform: scale(0.9);
+color: #1792b8;
+}
+
+.section {
+    margin-top: 6%;
+}
+
+.container {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.1rem;
+    color: white;
+}
+
+.box2 {
+    margin-top: 3.45%;
+    width: 40%;
+    height: auto;
+    border: 2px solid #fff;
+    margin-bottom: 2.2%;
+    transition-property: transform;
+    transition: .5s;
+    will-change: transform;
+    border-radius: 20px; 
+    backdrop-filter: blur(5px);
+}
+
+.box2:hover {
+    transform: scale(1.02);
+
+    border-radius: 5px;
+}
+
+.box2:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: 0 0 10px #1792b8;
+    pointer-events: none; 
+    z-index: -1; 
+  }
+
+  .box2 div {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 12px;
+    color: white;
+    margin-top: 10px;
+}
+
+.box2 li {
+    margin-bottom: 15px;
+    margin-left: 40px;
+    color: white;
+}
+.contfoot {   
+    position: absolute ;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    border-radius: 2px solid ;
+    background-color: black;
+    justify-content: center;
+   
+}
+.contfoot h3{ 
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    float: right;
+    margin-left: 15px;
+}
+.contfoot div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.logo_footer {
+    width: 40px;
+    padding: auto;
+    margin-top: 30%;
+    margin-left: 10px;
+    transition-property:transform;
+    transition: 500ms;
+    
+} 
+.logo_footer:hover{
+    transform: scale(0.95);
+} 
+.logo_footer:active{
+    transform: scale(0.8);
+}
+
+.text {
+    display: flex;
+    margin-bottom: 5%;
+    justify-content: center;
+}
+
+.containervivod{
+    width: 70%;
+    height: 100%;
+    border: 2px solid #fff;
+    margin-top: 15px;
+    transition-property: transform;
+    transition: .5s;
+    will-change: transform;
+    border-radius: 20px; 
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.containervivod:hover {
+    transform: scale(1.02);
+    border-radius: 5px;
+}
+
+.containervivod:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: 0 0 10px #1792b8;
+    pointer-events: none; 
+    z-index: -1; 
+}
+
+.text h1{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-left: 40px;
+    color: white;
+}
+@media (max-width: 992px) {
+    .wrapper {
+        height: 7vh;
+    }
+    .logo {
+        width: 4vh;
+        height: 100%;
+    } 
+    .section {
+        margin-top: 8%;
+    }
+    .box4 {
+        width: 50%;
+        height: 40vh;
+    }
+}
+@media (max-width: 625px) {
+    .wrapper {
+        height: 6vh;
+    }
+    .logo {
+        width: 3vh;
+        height: 80%;
+    } 
+    .box4 {
+        width: 70%;
+        height: 40vh;
+    }
+}
+@media (max-width: 480px) {
+    .wrapper {
+        height: 5vh;
+    }
+    .logo {
+        width: 3vh;
+        height: 80%;
+    } 
+    .section {
+        margin-top: 10%;
+    }
+    .containervivod{
+font-size: 0.9rem;
+    }
+}

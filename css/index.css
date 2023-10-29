@@ -500,3 +500,42 @@ font-size: 1rem;
         font-size: 1rem;
     }
 }
+
+@media (max-width: 400px){
+    .sec {
+        height: 55vh;
+        margin-top: 12%;
+
+    }
+    .sect2 {
+        height: 70vh;
+    }
+    .box3 {
+        width: 75%;
+        height: 27vh;
+        margin-top: 0;
+    }
+    .box h3 {
+        font-size: .72rem;
+    }
+    .box4 {
+        width: 80%;
+        height: 55vh;
+    }
+    .logo_footer {
+        width: 30px;
+        margin-top: 10%;
+        margin-left: 40px;
+    } 
+    .container {
+        height: 70vh;
+    }
+    .navigation {
+        margin-right: 0;
+        font-size: 0.7rem;
+    }
+    .box {
+        margin-left: 15px;
+    }
+
+}

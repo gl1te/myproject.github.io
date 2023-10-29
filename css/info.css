@@ -252,13 +252,12 @@ color: #1792b8;
 
 }
 .logo_footer {
-    width: 40px;
+    width: 30px;
     padding: auto;
     margin-top: 30%;
     margin-left: 10px;
     transition-property:transform;
     transition: 500ms;
-    
 } 
 .logo_footer:hover{
     transform: scale(0.95);
